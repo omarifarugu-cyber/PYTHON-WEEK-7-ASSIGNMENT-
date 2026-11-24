@@ -2,7 +2,7 @@
 import csv
 
 try:
-    with open("hubs.csv", "r") as f:
+    with open("hubs.csv", "r", newline="") as f:
         rows = list(csv.DictReader(f))
 except FileNotFoundError:
     print("hubs.csv not found")
